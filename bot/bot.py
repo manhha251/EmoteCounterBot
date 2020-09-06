@@ -3,11 +3,8 @@ import os
 
 import discord
 from discord.ext.commands import Bot
-from dotenv import load_dotenv
 
-load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-print(TOKEN)
 
 client = discord.Client()
 my_bot = Bot(command_prefix="!")
